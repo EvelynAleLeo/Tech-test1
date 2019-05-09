@@ -1,2 +1,45 @@
-# Tech-test1
+# Tech-test
 Bank tech test
+
+Requirements:
+
+- The user can interact with the code via IRB. 
+- Show deposits, withdrawals.
+- The account statement (date, amount, balance) can be printed.
+- Data can be kept in memory.
+
+Acceptance criteria:
+
+- Given a client makes a deposit of 1000 on 10-01-2012
+- And a deposit of 2000 on 13-01-2012
+- And a withdrawal of 500 on 14-01-2012
+- When she prints her bank statement
+- Then she would see:
+
+date || credit || debit || balance
+14/01/2012 || || 500.00 || 2500.00
+13/01/2012 || 2000.00 || || 3000.00
+10/01/2012 || 1000.00 || || 1000.00
+
+USER STORIES:
+
+As a bank account user
+So that I can keep track of my savings
+I should be able to have an initial balance of 0
+
+As a bank account user
+So that I can add money in my account
+I should be able to make a deposit
+
+As a bank account user
+So that I can withdraw money from my account
+I should be able to make a withdrawal
+
+As a bank account user
+So that I can decide whether I need to add more money in my account
+I should be able to print my bank statement
+
+Technologies:
+
+- Ruby
+- Testing with Rspec
