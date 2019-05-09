@@ -19,4 +19,15 @@ describe Account do
     expect(account.balance).to eq 100
   end
 
+# As a bank account user
+# So that I can withdraw money from my account
+# I should be able to make a withdrawal
+
+  it 'should be able to make a withdrawal' do
+    account = Account.new
+    account.deposit(100)
+    account.withdrawal(20)
+    expect(account.balance).to eq 80
+  end
+
 end
