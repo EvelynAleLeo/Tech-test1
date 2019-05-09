@@ -9,4 +9,14 @@ describe Account do
     expect(account.balance).to eq 0
   end
 
+# As a bank account user
+# So that I can add money in my account
+# I should be able to make a deposit
+
+  it 'should be able to add deposits' do
+    account = Account.new
+    account.deposit(100)
+    expect(account.balance).to eq 100
+  end
+
 end
