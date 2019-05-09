@@ -4,9 +4,10 @@ describe Account do
 # As a bank account user
 # So that I can keep track of my savings
 # I should be able to have an initial balance of 0
-  it 'has an initial balance of 0' do
+  it 'has an initial balance of 0 and has not any transactions' do
     account = Account.new
     expect(account.balance).to eq 0
+    expect(account.transactions).to eq transactions = []
   end
 
 # As a bank account user
